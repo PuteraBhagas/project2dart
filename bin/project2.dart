@@ -10,8 +10,11 @@ void main(List<String> arguments) {
  fl[1]= 2;
  fl[2]= 3;
  fl[3]= 4;
- fl[4]= 5;
+ //fl[4]= 5;
 
+var gl= [1,2,3];
+gl.add(4);
+gl.remove(2);
  // cetak
- stdout.writeln(fl);
+ stdout.writeln(gl);
 }
