@@ -5,16 +5,35 @@ import 'package:project2/project2.dart' as project2;
 void main(List<String> arguments) {
  // print('Hello world: ${project2.calculate()}!');
  //list
- var fl = List<int>.filled(4, 1);
- fl[0]= 1;
- fl[1]= 2;
- fl[2]= 3;
- fl[3]= 4;
- //fl[4]= 5;
+//  var fl = List<int>.filled(4, 1);
+//  fl[0]= 1;
+//  fl[1]= 2;
+//  fl[2]= 3;
+//  fl[3]= 4;
+//  //fl[4]= 5;
 
-var gl= [1,2,3];
-gl.add(4);
-gl.remove(2);
- // cetak
- stdout.writeln(gl);
+// var gl= [1,2,3];
+// gl.add(4);
+// gl.remove(2);
+//  // cetak
+//  stdout.writeln(gl);
+
+ var setNilai = <int> {};
+ var setNilai2 = {3,3,4,5};
+
+ stderr.writeln('Jumalah data setNilai = ');
+ String? input1 = stdin.readLineSync();
+ int jumlah1 =(int.tryParse(input1 ?? '') ?? 0);
+ for (int i = 0; i < jumlah1; i++) {
+stderr.writeln('Masukan nilai ke-${i+1}= ');
+  String? input = stdin.readLineSync();
+  int nilai = (int.tryParse(input ?? '') ?? 0);
+  setNilai.add(nilai);
+}
+
+print(setNilai);
+// print(setNilai.union(setNilai2));
+// print(setNilai.intersection(setNilai2));
+
+
 }
