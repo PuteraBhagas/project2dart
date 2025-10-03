@@ -1,6 +1,4 @@
-import 'dart:io';
 
-import 'package:project2/project2.dart' as project2;
 
 void main(List<String> arguments) {
  // print('Hello world: ${project2.calculate()}!');
@@ -35,16 +33,27 @@ void main(List<String> arguments) {
 // print(setNilai.union(setNilai2));
 // print(setNilai.intersection(setNilai2));
 
-var setNilai = <String> {};
+// var setNilai = <String> {};
 
- stderr.writeln('Jumalah data setNilai = ');
- String? input1 = stdin.readLineSync();
- int jumlah1 =(int.tryParse(input1 ?? '') ?? 0);
- for (int i = 0; i < jumlah1; i++) {
-stderr.writeln('Masukan nilai ke-${i+1}= ');
-  String? input = stdin.readLineSync();
-  String nilai = input ?? '';
-  setNilai.add(nilai);
-}
-print (setNilai.elementAt(0));
+//  stderr.writeln('Jumalah data setNilai = ');
+//  String? input1 = stdin.readLineSync();
+//  int jumlah1 =(int.tryParse(input1 ?? '') ?? 0);
+//  for (int i = 0; i < jumlah1; i++) {
+// stderr.writeln('Masukan nilai ke-${i+1}= ');
+//   String? input = stdin.readLineSync();
+//   String nilai = input ?? '';
+//   setNilai.add(nilai);
+// }
+// print (setNilai.elementAt(0));
+
+var sudah = {'nim': "101", 'nama': "Bhagas", 'Umur': 22};
+print(sudah);
+print(sudah['nama']);
+var opo= {
+  'nim': ["101", "102"],
+  'nama': ["Bhagas", "Ciko"],
+  'Umur': [22, 23]
+};
+print(opo);
+print(opo['nama']![1]);
 }
